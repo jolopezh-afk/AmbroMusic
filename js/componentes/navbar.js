@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AmbroMusic</title>
-
-    </head>
-
-    <body>
-        <h1>Registro Sesion </h1>
+class Navbar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
         <nav>
             <input type="text" placeholder="Buscar...">
             <ul class="d-flex list-unstyled gap-3">
@@ -36,10 +28,8 @@
                 </li>
             </ul>
         </nav>
-        <input id="input-email" type="email" placeholder="Ingrese correo">
-        <input id="input-password" type="password" placeholder="Ingrese Contraseña">
-        <button id="btn-inicio-sesion">Iniciar Sesion</button>
-        <script src="js/inicio-sesion.js"></script>
-    </body>
+        `
+    }
+}
 
-</html>
+customElements.define('custom-indice', Navbar)
