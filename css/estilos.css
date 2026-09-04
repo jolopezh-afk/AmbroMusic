@@ -1,0 +1,91 @@
+/* =========================
+   COLORES AMBROMUSIC
+   ========================= */
+
+:root {
+    --negro: #121212;
+    --negro-secundario: #1E1E1E;
+
+    --rojo: #D32F2F;
+    --rojo-hover: #E53935;
+
+    --amarillo: #FBC02D;
+    --verde: #388E3C;
+
+    --blanco: #F5F5F5;
+    --gris: #BDBDBD;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar-ambromusic {
+    background-color: var(--negro);
+}
+
+.navbar-ambromusic .navbar-brand {
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+.navbar-ambromusic .navbar-brand:hover {
+    color: var(--amarillo);
+}
+
+.navbar-ambromusic .nav-link {
+    color: var(--gris);
+    transition: color 0.2s ease;
+}
+
+.navbar-ambromusic .nav-link:hover {
+    color: var(--blanco);
+}
+
+.navbar-ambromusic .nav-link.active {
+    color: var(--blanco);
+}
+
+
+/* =========================
+   BUSCADOR
+   ========================= */
+
+.navbar-ambromusic .form-control {
+    background-color: var(--negro-secundario);
+    border: 1px solid #333333;
+    color: var(--blanco);
+}
+
+.navbar-ambromusic .form-control::placeholder {
+    color: var(--gris);
+}
+
+.navbar-ambromusic .form-control:focus {
+    background-color: var(--negro-secundario);
+    color: var(--blanco);
+    border-color: var(--rojo);
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25);
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+
+.btn-ambromusic {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+}
+
+.btn-ambromusic:hover {
+    background-color: var(--rojo-hover);
+    color: var(--blanco);
+}
+
+.logo-ambromusic {
+    height: 140px;
+    width: auto;
+}
