@@ -1,32 +1,202 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <html lang="es"> <head>
+<meta charset="UTF-8">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmbroMusic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+<title>AmbroMusic - Administrador</title>
 
-<body class="d-flex flex-column min-vh-100">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
 
-    <h1>Admin View</h1>
-    <custom-indice></custom-indice>
+<link rel="stylesheet" href="../css/estilos.css">
 
-    <footer class="mt-auto">
+</head> <body class="d-flex flex-column min-vh-100">
+<!-- NAVBAR -->
 
-        <p>AmbroMusic - La Florida, Santiago de Chile. Todos los derechos reservados.</p>
-    </footer>
+<custom-indice></custom-indice>
 
-    <script src="../js/componentes/navbar.js"></script>
-    <script src="../js/admin.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+<!-- PANEL DE ADMINISTRADOR -->
 
-</body>
+<main class="container">
 
-</html>
+    <h1 class="titulo-admin">
+        Panel de Administrador
+    </h1>
+
+
+    <div class="grid-admin">
+
+
+        <!-- USUARIOS -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                👥
+            </div>
+
+            <h3>
+                Usuarios
+            </h3>
+
+            <p>
+                Administrar las cuentas de clientes,
+                vendedores y administradores.
+            </p>
+
+            <button class="btn-admin">
+                Gestionar usuarios
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTOS -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                🎸
+            </div>
+
+            <h3>
+                Productos
+            </h3>
+
+            <p>
+                Administrar el catálogo,
+                precios y categorías.
+            </p>
+
+            <button class="btn-admin">
+                Gestionar productos
+            </button>
+
+        </div>
+
+
+        <!-- INVENTARIO -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                📦
+            </div>
+
+            <h3>
+                Inventario
+            </h3>
+
+            <p>
+                Controlar el stock y consultar
+                las existencias de productos.
+            </p>
+
+            <button class="btn-admin">
+                Gestionar inventario
+            </button>
+
+        </div>
+
+
+        <!-- VENTAS -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                🛒
+            </div>
+
+            <h3>
+                Ventas
+            </h3>
+
+            <p>
+                Revisar las ventas, pedidos
+                y estados de las compras.
+            </p>
+
+            <button class="btn-admin">
+                Gestionar ventas
+            </button>
+
+        </div>
+
+
+        <!-- REPORTES -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                📊
+            </div>
+
+            <h3>
+                Reportes
+            </h3>
+
+            <p>
+                Consultar estadísticas de ventas,
+                productos e inventario.
+            </p>
+
+            <button class="btn-admin">
+                Ver reportes
+            </button>
+
+        </div>
+
+
+        <!-- CONFIGURACIÓN -->
+
+        <div class="tarjeta-admin">
+
+            <div class="icono-admin">
+                ⚙️
+            </div>
+
+            <h3>
+                Configuración
+            </h3>
+
+            <p>
+                Administrar la configuración
+                general de AmbroMusic.
+            </p>
+
+            <button class="btn-admin">
+                Configurar
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="mt-auto">
+
+    <p>
+        AmbroMusic - La Florida, Santiago de Chile.
+        Todos los derechos reservados.
+    </p>
+
+</footer>
+
+
+<script src="../js/componentes/navbar.js"></script>
+<script src="../js/admin.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous">
+</script>
+
+</body> </html>
