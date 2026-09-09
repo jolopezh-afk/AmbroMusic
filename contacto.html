@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | AmbroMusic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <custom-indice></custom-indice>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+    <main class="container my-5">
+
+        <!-- NAVBAR DESDE COMPONENTE JS -->
+        
+
+        <!-- CABECERA -->
+        <div class="mb-4">
+            <h1 class="fw-bold fs-2 text-white mb-1">Contacto y Atención al Cliente</h1>
+            <p class="text-secondary mb-0">¿Tienes alguna consulta sobre nuestros productos o envíos? Escríbenos y te
+                responderemos a la brevedad.</p>
+        </div>
+
+        <!-- GRID PRINCIPAL -->
+        <div class="row g-4">
+
+            <!-- COLUMNA IZQUIERDA: FORMULARIO -->
+            <div class="col-lg-7">
+                <div class="contacto-card">
+                    <h2 class="h4 fw-bold text-white mb-4">Envíanos un mensaje</h2>
+
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="correo@ejemplo.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono de contacto</label>
+                            <input type="tel" id="telefono" class="form-control" placeholder="+56 9 1234 5678">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" id="asunto" class="form-control" placeholder="¿En qué podemos ayudarte?"
+                                required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" rows="5"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-ambromusic w-100 py-2 fw-bold">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: INFORMACIÓN RÁPIDA -->
+            <div class="col-lg-5">
+                <div class="d-flex flex-column gap-3">
+
+                    <div class="info-box">
+                        <span class="info-box-icon">📞</span>
+                        <h3>Llámanos</h3>
+                        <p class="info-highlight mb-1">+56 9 12345678</p>
+                        <p class="small text-secondary">Atención telefónica directa de nuestro equipo.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-box-icon">🕐</span>
+                        <h3>Horario de atención</h3>
+                        <p class="text-white mb-1">Lunes a Viernes: <strong>10:00 a 18:30 hrs.</strong></p>
+                        <p class="small text-secondary">Sábados y Domingos: <span
+                                class="text-danger fw-bold">Cerrado</span></p>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-box-icon">💬</span>
+                        <h3>WhatsApp directo</h3>
+                        <p class="small text-secondary mb-3">¿Necesitas ayuda rápida con un pedido o cotización?</p>
+                        <a href="https://wa.me/56943519040" target="_blank"
+                            class="btn btn-ambromusic w-100 py-2 text-decoration-none">
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN BENEFICIOS -->
+        <div class="mt-5 pt-3">
+            <h2 class="h4 fw-bold text-white text-center mb-4">¿Por qué comprar en AmbroMusic?</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="info-box h-100">
+                        <span class="info-box-icon">🚚</span>
+                        <h4>Despacho a todo Chile</h4>
+                        <p class="small text-secondary">Envíos con seguimiento en línea.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-box h-100">
+                        <span class="info-box-icon">🛡️</span>
+                        <h4>Productos garantizados</h4>
+                        <p class="small text-secondary">Garantía oficial en todos tus instrumentos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-box h-100">
+                        <span class="info-box-icon">🎧</span>
+                        <h4>Atención personalizada</h4>
+                        <p class="small text-secondary">Asesoría de especialistas en música.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info-box h-100">
+                        <span class="info-box-icon">🔒</span>
+                        <h4>Compra 100% segura</h4>
+                        <p class="small text-secondary">Pagos cifrados mediante Webpay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="mb-0">AmbroMusic - La Florida, Santiago de Chile. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/componentes/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

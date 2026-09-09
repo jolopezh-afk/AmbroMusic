@@ -94,7 +94,7 @@
 
 
 /* =========================
-   INICIO DE SESIÓN
+   INICIO DE SESIĆ“N
    ========================= */
 
 body {
@@ -149,7 +149,7 @@ body {
 
 
 /* =========================
-   CATÁLOGO DE PRODUCTOS
+   CATĆLOGO DE PRODUCTOS
    ========================= */
 
 .grid-productos {
@@ -214,7 +214,7 @@ body {
 }
 
 
-/* Categoría */
+/* CategorĆ­a */
 
 .tarjeta-producto::before {
     content: "";
@@ -236,7 +236,7 @@ body {
 }
 
 
-/* Botón */
+/* BotĆ³n */
 
 .tarjeta-producto button {
     width: 100%;
@@ -593,4 +593,80 @@ background-color: var(--rojo-hover);
 color: var(--blanco);
 
 
+}
+
+/* =========================
+   CONTACTO Y SECCIONES
+   ========================= */
+
+.contacto-card {
+    background-color: var(--negro-secundario);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 28px;
+    height: 100%;
+}
+
+.contacto-card .form-label {
+    color: var(--gris);
+    font-size: 0.875rem;
+    margin-bottom: 6px;
+}
+
+.contacto-card .form-control {
+    background-color: var(--negro) !important;
+    border: 1px solid #333333 !important;
+    color: var(--blanco) !important;
+    border-radius: 6px;
+    padding: 10px 14px;
+}
+
+.contacto-card .form-control::placeholder {
+    color: #666666 !important;
+}
+
+.contacto-card .form-control:focus {
+    background-color: var(--negro) !important;
+    color: var(--blanco) !important;
+    border-color: var(--rojo) !important;
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25) !important;
+}
+
+.info-box {
+    background-color: var(--negro-secundario);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-3px);
+    border-color: var(--rojo);
+}
+
+.info-box-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.info-box h3, .info-box h4 {
+    color: var(--blanco);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: var(--gris);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.info-highlight {
+    color: var(--amarillo);
+    font-weight: 700;
+    font-size: 1.1rem;
 }
