@@ -22,7 +22,9 @@
    ========================= */
 
 .navbar-ambromusic {
-    background-color: var(--negro);
+    background-color: var(--negro-secundario);
+    border-bottom: 1px solid #333333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-ambromusic .navbar-brand {
@@ -46,6 +48,7 @@
 .navbar-ambromusic .nav-link.active {
     color: var(--blanco);
 }
+
 
 
 /* =========================
@@ -88,4 +91,158 @@
 .logo-ambromusic {
     height: 140px;
     width: auto;
+}
+
+/* =========================
+   INICIO DE SESIÓN
+   ========================= */
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.login-container {
+    min-height: 85vh;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--negro-secundario);
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+
+.login-titulo {
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+.login-card .form-label {
+    color: var(--gris);
+}
+
+.login-card .form-control {
+    background-color: var(--negro);
+    border: 1px solid #333333;
+    color: var(--blanco);
+}
+
+.login-card .form-control::placeholder {
+    color: var(--gris);
+}
+
+.login-card .form-control:focus {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-color: var(--rojo);
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25);
+}
+
+.login-card .btn-ambromusic {
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* =========================
+   CATÁLOGO DE PRODUCTOS
+   ========================= */
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 30px 0;
+}
+
+/* Tarjeta de cada producto */
+
+.tarjeta-producto {
+    background-color: var(--negro-secundario);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--rojo);
+}
+
+/* Imagen del instrumento */
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Nombre */
+
+.tarjeta-producto h3 {
+    color: var(--blanco);
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Categoría */
+
+.tarjeta-producto::before {
+    content: "";
+    display: inline-block;
+    color: var(--amarillo);
+}
+
+/* Precio */
+
+.tarjeta-producto .precio {
+    color: var(--amarillo);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+
+.tarjeta-producto button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tarjeta-producto button:hover {
+    background-color: var(--rojo-hover);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: var(--negro-secundario);
+    color: var(--gris);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }

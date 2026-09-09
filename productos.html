@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos - Sonido Vivo</title>
     <!-- Asegúrate de coordinar el nombre de este archivo con tu equipo -->
-    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
     <header>
-        <h1>Sonido Vivo</h1>
         <nav>
             <!-- Menú de navegación unificado con tus compañeros -->
-            <a href="index.html">Home</a>
-            <a href="productos.html">Productos</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="login.html">Iniciar Sesión</a>
+            <custom-indice></custom-indice>
+
         </nav>
         <div id="carrito-resumen">
             🛒 Carrito: <span id="contador-carrito">0</span> ítems
         </div>
     </header>
 
-    <main>
+    <main class="flex-grow-1">
         <section>
             <h2>Catálogo de Instrumentos y Equipos</h2>
             <!-- Este contenedor vacío será llenado por tu JavaScript -->
@@ -31,10 +31,14 @@
     </main>
 
     <footer>
-        <p>Sonido Vivo - Viña del Mar. Todos los derechos reservados.</p>
+        <p>AmbroMusic - La Florida, Santiago de Chile. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Tu script exclusivo para la lógica del catálogo -->
     <script src="js/catalogo.js"></script>
+    <script src="js/componentes/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

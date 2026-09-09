@@ -4,28 +4,28 @@ const catalogoSonidoVivo = [
         id: 1,
         nombre: "Guitarra Eléctrica Stratocaster",
         precio: 250000,
-        imagen: "img/guitarra.jpg",
+        imagen: "img/guitarra.png",
         categoria: "Cuerdas"
     },
     {
         id: 2,
         nombre: "Batería Acústica 5 piezas",
         precio: 550000,
-        imagen: "img/bateria.jpg",
+        imagen: "img/bateria.png",
         categoria: "Percusión"
     },
     {
         id: 3,
         nombre: "Amplificador de Bajo 50W",
         precio: 120000,
-        imagen: "img/amplificador.jpg",
+        imagen: "img/amplificador.png",
         categoria: "Equipos"
     },
     {
         id: 4,
         nombre: "Micrófono Dinámico Vocal",
         precio: 45000,
-        imagen: "img/microfono.jpg",
+        imagen: "img/microfono.png",
         categoria: "Accesorios"
     }
 ];

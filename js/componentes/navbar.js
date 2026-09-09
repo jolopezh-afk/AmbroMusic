@@ -61,6 +61,13 @@ class Navbar extends HTMLElement {
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link" href="productos.html">
+                                    Productos
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">
                                     Ofertas
                                 </a>
