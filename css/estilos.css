@@ -50,7 +50,6 @@
 }
 
 
-
 /* =========================
    BUSCADOR
    ========================= */
@@ -93,6 +92,7 @@
     width: auto;
 }
 
+
 /* =========================
    INICIO DE SESIÓN
    ========================= */
@@ -109,7 +109,9 @@ body {
 .login-card {
     width: 100%;
     max-width: 400px;
+
     background-color: var(--negro-secundario);
+
     border: 1px solid #333333;
     border-radius: 12px;
 }
@@ -145,6 +147,7 @@ body {
     font-weight: 600;
 }
 
+
 /* =========================
    CATÁLOGO DE PRODUCTOS
    ========================= */
@@ -152,76 +155,104 @@ body {
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
     gap: 25px;
     padding: 30px 0;
 }
+
 
 /* Tarjeta de cada producto */
 
 .tarjeta-producto {
     background-color: var(--negro-secundario);
+
     border: 1px solid #333333;
     border-radius: 12px;
+
     padding: 20px;
+
     text-align: center;
+
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 /* Efecto al pasar el mouse */
 
 .tarjeta-producto:hover {
     transform: translateY(-5px);
+
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
     border-color: var(--rojo);
 }
+
 
 /* Imagen del instrumento */
 
 .tarjeta-producto img {
     width: 100%;
     height: 200px;
+
     object-fit: contain;
+
     margin-bottom: 15px;
 }
+
 
 /* Nombre */
 
 .tarjeta-producto h3 {
     color: var(--blanco);
+
     font-size: 1.1rem;
     font-weight: 600;
+
     min-height: 50px;
+
     margin-bottom: 10px;
 }
+
 
 /* Categoría */
 
 .tarjeta-producto::before {
     content: "";
     display: inline-block;
+
     color: var(--amarillo);
 }
+
 
 /* Precio */
 
 .tarjeta-producto .precio {
     color: var(--amarillo);
+
     font-size: 1.3rem;
     font-weight: 700;
+
     margin-bottom: 15px;
 }
+
 
 /* Botón */
 
 .tarjeta-producto button {
     width: 100%;
+
     padding: 10px;
+
     background-color: var(--rojo);
     color: var(--blanco);
+
     border: none;
     border-radius: 6px;
+
     font-weight: 600;
+
     cursor: pointer;
+
     transition: background-color 0.2s ease;
 }
 
@@ -229,20 +260,177 @@ body {
     background-color: var(--rojo-hover);
 }
 
+
 /* =========================
    FOOTER
    ========================= */
 
 footer {
     background-color: var(--negro-secundario);
+
     color: var(--gris);
+
     text-align: center;
+
     padding: 20px;
+
     margin-top: 40px;
+
     border-top: 1px solid #333333;
 }
 
 footer p {
     margin: 0;
+
     font-size: 0.9rem;
+}
+
+
+/* =========================
+   VENDEDOR
+   ========================= */
+
+.titulo-vendedor {
+    color: var(--blanco);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   GRID VENDEDOR
+   ========================= */
+
+.grid-vendedor {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+
+    gap: 25px;
+
+    padding: 30px 0;
+}
+
+
+/* =========================
+   TARJETAS VENDEDOR
+   ========================= */
+
+.tarjeta-vendedor {
+    background-color: var(--negro-secundario);
+
+    border: 1px solid #333333;
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   EFECTO TARJETA
+   ========================= */
+
+.tarjeta-vendedor:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+    border-color: var(--rojo);
+}
+
+
+/* =========================
+   ICONO
+   ========================= */
+
+.icono-vendedor {
+    height: 140px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   TITULO TARJETA
+   ========================= */
+
+.tarjeta-vendedor h3 {
+    color: var(--blanco);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    min-height: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   DESCRIPCION
+   ========================= */
+
+.tarjeta-vendedor p {
+    color: var(--gris);
+
+    font-size: 0.9rem;
+
+    min-height: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   BOTON VENDEDOR
+   ========================= */
+
+.btn-vendedor {
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: var(--rojo);
+    color: var(--blanco);
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.btn-vendedor:hover {
+    background-color: var(--rojo-hover);
+
+    color: var(--blanco);
 }
