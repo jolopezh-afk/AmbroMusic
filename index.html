@@ -12,12 +12,58 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <h1></h1>
-
     <custom-indice></custom-indice>
 
-    <footer class="mt-auto">
+    <!-- Contenido Principal -->
+    <main class="container my-4">
+        <!-- Carrusel de 3 fotos sin recorte -->
+        <div id="carruselInicio" class="carousel slide shadow rounded overflow-hidden bg-dark" data-bs-ride="carousel">
 
+            <!-- Indicadores (3 puntos) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Imágenes locales de la carpeta img/ -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <a href="productos.html">
+                        <img src="img/banner1.png" class="d-block w-100" alt="Banner 1"
+                            style="height: 400px; object-fit: contain; cursor: pointer;">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <a href="productos.html">
+                        <img src="img/banner2.png" class="d-block w-100" alt="Banner 2"
+                            style="height: 400px; object-fit: contain; cursor: pointer;">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <a href="productos.html">
+                        <img src="img/banner3.png" class="d-block w-100" alt="Banner 3"
+                            style="height: 400px; object-fit: contain; cursor: pointer;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
         <p>AmbroMusic - La Florida, Santiago de Chile. Todos los derechos reservados.</p>
     </footer>
 
@@ -25,7 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
